@@ -7,7 +7,7 @@ import {
   FaBuilding, 
   FaArrowRight,
   FaRegBuilding,
-  FaPartyHorn,
+  FaGift,
   FaTicketAlt,
   FaCar,
   FaGraduationCap,
@@ -25,7 +25,7 @@ interface CompanyType {
 const companyTypes: CompanyType[] = [
   { id: 'residential', title: 'Residential Estate', icon: <FaRegBuilding size={20} className="text-vsured-teal" /> },
   { id: 'corporate', title: 'Corporate Organisation', icon: <FaBuilding size={20} className="text-vsured-teal" /> },
-  { id: 'social', title: 'Social Event', icon: <FaPartyHorn size={20} className="text-vsured-teal" /> },
+  { id: 'social', title: 'Social Event', icon: <FaGift size={20} className="text-vsured-teal" /> },
   { id: 'ticketing', title: 'Ticketing Event', icon: <FaTicketAlt size={20} className="text-vsured-teal" /> },
   { id: 'carpark', title: 'Car Park Operators', icon: <FaCar size={20} className="text-vsured-teal" /> },
   { id: 'schools', title: 'Schools & Education Institutions', icon: <FaGraduationCap size={20} className="text-vsured-teal" /> },
