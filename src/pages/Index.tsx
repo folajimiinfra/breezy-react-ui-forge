@@ -4,16 +4,16 @@ import { Button } from '@/components/ui/button';
 import VSuredLogo from '@/components/VSuredLogo';
 import CompanyTypeCard from '@/components/CompanyTypeCard';
 import { 
-  Building, 
-  ArrowRight,
-  Building2,
-  PartyPopper,
-  Ticket,
-  Car,
-  GraduationCap,
-  Clock,
-  Network
-} from 'lucide-react';
+  FaBuilding, 
+  FaArrowRight,
+  FaRegBuilding,
+  FaPartyHorn,
+  FaTicketAlt,
+  FaCar,
+  FaGraduationCap,
+  FaClock,
+  FaNetworkWired
+} from 'react-icons/fa';
 import { useToast } from '@/components/ui/use-toast';
 
 interface CompanyType {
@@ -23,14 +23,14 @@ interface CompanyType {
 }
 
 const companyTypes: CompanyType[] = [
-  { id: 'residential', title: 'Residential Estate', icon: <Building2 size={20} className="text-vsured-teal" /> },
-  { id: 'corporate', title: 'Corporate Organisation', icon: <Building size={20} className="text-vsured-teal" /> },
-  { id: 'social', title: 'Social Event', icon: <PartyPopper size={20} className="text-vsured-teal" /> },
-  { id: 'ticketing', title: 'Ticketing Event', icon: <Ticket size={20} className="text-vsured-teal" /> },
-  { id: 'carpark', title: 'Car Park Operators', icon: <Car size={20} className="text-vsured-teal" /> },
-  { id: 'schools', title: 'Schools & Education Institutions', icon: <GraduationCap size={20} className="text-vsured-teal" /> },
-  { id: 'workshift', title: 'Workshift Management', icon: <Clock size={20} className="text-vsured-teal" /> },
-  { id: 'others', title: 'Others', icon: <Network size={20} className="text-vsured-teal" /> },
+  { id: 'residential', title: 'Residential Estate', icon: <FaRegBuilding size={20} className="text-vsured-teal" /> },
+  { id: 'corporate', title: 'Corporate Organisation', icon: <FaBuilding size={20} className="text-vsured-teal" /> },
+  { id: 'social', title: 'Social Event', icon: <FaPartyHorn size={20} className="text-vsured-teal" /> },
+  { id: 'ticketing', title: 'Ticketing Event', icon: <FaTicketAlt size={20} className="text-vsured-teal" /> },
+  { id: 'carpark', title: 'Car Park Operators', icon: <FaCar size={20} className="text-vsured-teal" /> },
+  { id: 'schools', title: 'Schools & Education Institutions', icon: <FaGraduationCap size={20} className="text-vsured-teal" /> },
+  { id: 'workshift', title: 'Workshift Management', icon: <FaClock size={20} className="text-vsured-teal" /> },
+  { id: 'others', title: 'Others', icon: <FaNetworkWired size={20} className="text-vsured-teal" /> },
 ];
 
 const Index: React.FC = () => {
@@ -115,7 +115,7 @@ const Index: React.FC = () => {
             className="w-full py-6 bg-vsured-teal hover:bg-vsured-teal/90 text-white"
           >
             Get Started
-            <ArrowRight className="ml-2" size={18} />
+            <FaArrowRight className="ml-2" size={18} />
           </Button>
           
           <div className="mt-16 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
